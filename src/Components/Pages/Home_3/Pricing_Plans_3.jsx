@@ -1,7 +1,10 @@
 import React from 'react';
 import FAQ_Medium_Card from '../../Sections/FAQ_Medium_Card';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Pricing_Plans_3 = () => {
+    useTitle('Pricing Plan');
+
     return (
         <div className='mb-[80px] md:mb-[110px]'>
             <section className="mt-[50px] md:mt-[88px] px-5 md:px-0">

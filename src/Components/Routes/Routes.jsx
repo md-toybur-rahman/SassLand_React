@@ -51,6 +51,16 @@ import Pricing_Plans_4 from "../Pages/Home_4/Pricing_Plans_4";
 import Trams_Conditions_4 from "../Pages/Home_4/Trams_Conditions_4";
 import ErrorPage_4 from "../Pages/Home_4/ErrorPage_4";
 import FAQ_4 from "../Pages/Home_4/FAQ_4";
+import Layout_5 from "../Pages/Home_5/Layout_5";
+import About_Us_5 from "../Pages/Home_5/About_Us_5";
+import Blog_5 from "../Pages/Home_5/Blog_5";
+import Blog_Details_5 from "../Pages/Home_5/Blog_Details_5";
+import Contact_Us_5 from "../Pages/Home_5/Contact_Us_5";
+import Pricing_Plans_5 from "../Pages/Home_5/Pricing_Plans_5";
+import Service_Details_5 from "../Pages/Home_5/Service_Details_5";
+import Services_5 from "../Pages/Home_5/Services_5";
+import Team_5 from "../Pages/Home_5/Team_5";
+import Home_5 from "../Pages/Home_5/Home_5";
 
 const router = createBrowserRouter([
     {
@@ -256,6 +266,49 @@ const router = createBrowserRouter([
             {
                 path: "/Home_4/ErrorPage",
                 element: <ErrorPage_4></ErrorPage_4>
+            }
+            
+        ]
+    },
+    {
+        path: "/Home_5",
+        element: <Layout_5></Layout_5>,
+        children: [
+            {
+                path: "/Home_5",
+                element: <Home_5></Home_5>
+            },
+            {
+                path: "/Home_5/About_Us",
+                element: <About_Us_5></About_Us_5>
+            },
+            {
+                path: "/Home_5/Blog",
+                element: <Blog_5></Blog_5>
+            },
+            {
+                path: "/Home_5/Blog_Details",
+                element: <Blog_Details_5></Blog_Details_5>
+            },
+            {
+                path: "/Home_5/Contact_Us",
+                element: <Contact_Us_5></Contact_Us_5>
+            },
+            {
+                path: "/Home_5/Pricing_Plans",
+                element: <Pricing_Plans_5></Pricing_Plans_5>
+            },
+            {
+                path: "/Home_5/Service_Details",
+                element: <Service_Details_5></Service_Details_5>
+            },
+            {
+                path: "/Home_5/Services",
+                element: <Services_5></Services_5>
+            },
+            {
+                path: "/Home_5/Team",
+                element: <Team_5></Team_5>
             }
             
         ]

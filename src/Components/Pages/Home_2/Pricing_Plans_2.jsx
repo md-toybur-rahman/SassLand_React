@@ -3,8 +3,10 @@ import Home_2_Banner_Title from '../../Sections/Home_2_Banner_Title';
 import Home_2_Pricing_Card from '../../Sections/Home_2_Pricing_Card';
 import { Link } from 'react-router-dom';
 import FAQ_Medium_Card from '../../Sections/FAQ_Medium_Card';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Pricing_Plans_2 = () => {
+    useTitle('Pricing Plan');
     return (
         <div>
             <div className="mt-[50px] md:mt-[86px]">

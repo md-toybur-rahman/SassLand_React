@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Home_3_Features_Card from '../../Sections/Home_3_Features_Card';
 import Home_3_Pricing_Card from '../../Sections/Home_3_Pricing_Card';
 import Home_3_Customer_Feedback_Card from '../../Sections/Home_3_Customer_Feedback_Card';
 import Trusted_Companies from '../../Sections/Trusted_Companies';
-
+import useTitle from '../../../Custom_Hooks/useTitle';
+import "https://code.jquery.com/jquery-3.2.1.min.js"
+import "../../../../public/css/grt-youtube-popup.css";
+import "../../../../public/js/grt-youtube-popup";
+import useVideoModal from '../../../Custom_Hooks/useVideoModal';
 const Home_3 = () => {
+    useTitle('Home');
+
     function handleInstallmentToggle() {
         const monthly = document.getElementById('monthly');
         const yearly = document.getElementById('yearly');
@@ -29,7 +35,7 @@ const Home_3 = () => {
     return (
         <div>
             <section className="mt-[60px] md:mt-[160px] mx-auto px-5">
-                <img className="w-full max-w-[1298px] mx-auto" src="../../../../public/images/home3-video-image.png" alt="" />
+                <img onClick={() => useVideoModal('xcJtL7QggTI')} className="w-full max-w-[1298px] mx-auto youtube-link cursor-pointer" src="../../../../public/images/home3-video-image.png" alt="" />
             </section>
             <main className="max-w-[1142px] mx-auto  px-5 xl:px-0">
                 <section className="flex flex-wrap md:flex-nowrap items-center gap-[69px] mt-[100px] md:mt-[156px]">

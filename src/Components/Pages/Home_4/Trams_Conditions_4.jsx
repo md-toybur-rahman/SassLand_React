@@ -1,8 +1,11 @@
 import React from 'react';
 import Home_4_Banner from '../../Sections/Home_4_Banner';
 import Home_4_Ready_2_Section from '../../Sections/Home_4_Ready_2_Section';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Trams_Conditions_4 = () => {
+    useTitle('Trams Conditions');
+
     return (
         <div className='mb-[80px] md:mb-[153px]'>
             <section>

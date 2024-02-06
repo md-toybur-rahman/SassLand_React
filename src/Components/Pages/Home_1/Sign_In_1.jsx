@@ -1,8 +1,10 @@
 // import React from 'react';
 
 import { Link } from "react-router-dom";
+import useTitle from "../../../Custom_Hooks/useTitle";
 
 const Sign_In_1 = () => {
+    useTitle('Sign In');
     return (
         <main className="max-w-[1142px] mx-auto px-5 xl:px-0 mb-[100px] md:mb-[271px]">
         {/* Login Section */}

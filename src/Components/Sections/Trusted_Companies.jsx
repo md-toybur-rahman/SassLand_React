@@ -7,6 +7,7 @@ const Trusted_Companies = () => {
     const location = useLocation()
     const [pathSelection, setPathSelection] = useState(false);
     const [home4PathSelection, setHome4PathSelection] = useState(false);
+    const [home5PathSelection, setHome5PathSelection] = useState(false);
     useEffect(() => {
         if (location.pathname == "/Home_3") {
             setPathSelection(true);
@@ -14,7 +15,7 @@ const Trusted_Companies = () => {
         else if (location.pathname == "/Home_3/Gallery") {
             setPathSelection(true);
         }
-        else{
+        else {
             setPathSelection(false);
         }
         if (location.pathname == "/Home_4") {
@@ -23,8 +24,17 @@ const Trusted_Companies = () => {
         else if (location.pathname == "/Home_4/About_Us") {
             setHome4PathSelection(true);
         }
-        else{
+        else {
             setHome4PathSelection(false);
+        }
+        if (location.pathname == "/Home_5") {
+            setHome5PathSelection(true);
+        }
+        else if (location.pathname == "/Home_5/About_Us") {
+            setHome5PathSelection(true);
+        }
+        else {
+            setHome5PathSelection(false);
         }
     }, [])
     return (
@@ -134,6 +144,28 @@ const Trusted_Companies = () => {
                                 <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out" className="w-[50px] md:w-auto" src="../../../public/images/icons/kayako-dark.svg" alt="" />
                                 <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out" className="w-[50px] md:w-auto" src="../../../public/images/icons/intercom-dark.svg" alt="" />
                                 <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out" className="w-[50px] md:w-auto" src="../../../public/images/icons/treehouse-dark.svg" alt="" />
+                            </div>
+                        </div>
+                    </section>
+                    : ''
+            }
+            {
+                home5PathSelection ?
+                    <section className="mt-[70px] max-w-[967px] mx-auto">
+                        <div>
+                            <h1 className="text-base md:text-lg text-[#223645] font-semibold mb-8 text-center">Our Featured Partners</h1>
+                            <div
+                                className="flex flex-wrap items-center justify-center gap-[30px] md:gap-[56px] border-t border-b border-[#F3F4F5] py-[33px]">
+                                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0" className="w-[50px] md:w-auto"
+                                    src="../../../public/images/icons/Framer.svg" alt="" />
+                                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" className="w-[50px] md:w-auto"
+                                    src="../../../public/images/icons/Reddit.svg" alt="" />
+                                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" className="w-[50px] md:w-auto"
+                                    src="../../../public/images/icons/Airbnb5.svg" alt="" />
+                                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" className="w-[50px] md:w-auto"
+                                    src="../../../public/images/icons/Tesla.svg" alt="" />
+                                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400" className="w-[50px] md:w-auto"
+                                    src="../../../public/images/icons/Uber.svg" alt="" />
                             </div>
                         </div>
                     </section>

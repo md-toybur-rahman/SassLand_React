@@ -4,6 +4,8 @@ import Home_4_Blog_Card from '../../Sections/Home_4_Blog_Card';
 import Home_4_Blog_Category from '../../Sections/Home_4_Blog_Category';
 
 const Blog_4 = () => {
+    useTitle('Blog');
+
     return (
         <div className='mb-[80px] md:mb-[194px]'>
             <section>

@@ -87,6 +87,13 @@ const Landing_Page = () => {
                             <p className="mt-[32px] text-[18px] md:text-[24px] font-medium text-[#333765] text-center">Landing page
                                 4</p>
                         </Link>
+                        <Link to="/Home_5" className="sm:max-w-[541px]">
+                            <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out" className="sm:w-[541px] sm:h-[292px] rounded-3xl overflow-hidden">
+                                <img className="w-full h-full" src="../../../../public/images/Home_page5_landing.png" alt="" />
+                            </div>
+                            <p className="mt-[32px] text-[18px] md:text-[24px] font-medium text-[#333765] text-center">Landing page
+                                5</p>
+                        </Link>
                     </div>
                 </section>
 

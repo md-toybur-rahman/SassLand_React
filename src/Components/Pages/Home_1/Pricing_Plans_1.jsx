@@ -1,10 +1,12 @@
 // import React from 'react';
 
+import useTitle from "../../../Custom_Hooks/useTitle";
 import Home_1_FAQ from "../../Sections/Home_1_FAQ";
 import Home_1_Pricing_Card from "../../Sections/Home_1_Pricing_Card";
 import Time_Is_Money from "../../Sections/Time_Is_Money";
 
 const Pricing_Plans_1 = () => {
+    useTitle('Pricing Plan');
     return (
         <div>
             <section className="mt-[40px] md:mt-[88px] mb-[64px] px-5 lg:px-0">

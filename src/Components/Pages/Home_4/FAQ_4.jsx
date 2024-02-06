@@ -2,8 +2,11 @@ import React from 'react';
 import Home_4_Banner from '../../Sections/Home_4_Banner';
 import Home_4_Ready_2_Section from '../../Sections/Home_4_Ready_2_Section';
 import FAQ_Medium_Card from '../../Sections/FAQ_Medium_Card';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const FAQ_4 = () => {
+    useTitle('FAQ');
+
     return (
         <div className='mb-[80px] md:mb-[141px]'>
             <section>

@@ -3,8 +3,11 @@ import Home_4_Features_Card from '../../Sections/Home_4_Features_Card';
 import Trusted_Companies from '../../Sections/Trusted_Companies';
 import Home_4_Client_Think_Section from '../../Sections/Home_4_Client_Think_Section';
 import FAQ_Medium_Card from '../../Sections/FAQ_Medium_Card';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Home_4 = () => {
+    useTitle('Home');
+
     return (
         <div className='mb-[80px] md:mb-[119px]'>
             <section>
@@ -84,7 +87,8 @@ const Home_4 = () => {
                 </section>
 
                 <section className="px-5 lg:px-0 mt-[100px] md:mt-[156px]">
-                    <Home_4_Client_Think_Section></Home_4_Client_Think_Section>
+                    <Home_4_Client_Think_Section
+                    videoId="xcJtL7QggTI"></Home_4_Client_Think_Section>
                 </section>
                 <section>
                     <Trusted_Companies></Trusted_Companies>

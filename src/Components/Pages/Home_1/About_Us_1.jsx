@@ -1,5 +1,6 @@
 // import React from 'react';
 
+import useTitle from "../../../Custom_Hooks/useTitle";
 import Home_1_Banner_Title from "../../Sections/Home_1_Banner_Title";
 import Our_Team from "../../Sections/Our_Team";
 import Simple_Software from "../../Sections/Simple_Software";
@@ -8,6 +9,7 @@ import Trusted_Companies from "../../Sections/Trusted_Companies";
 import Footer_1 from "./Footer_1";
 
 const About_Us_1 = () => {
+    useTitle('About Us');
     return (
         <div>
             <div>

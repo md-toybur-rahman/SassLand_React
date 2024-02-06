@@ -1,9 +1,11 @@
 // import React from 'react';
 
+import useTitle from "../../../Custom_Hooks/useTitle";
 import Contact_Details_Box from "../../Sections/Contact_Details_Box";
 import Message_Box from "../../Sections/Message_Box";
 
 const Contact_Us_1 = () => {
+    useTitle('Contact Us');
     return (
         <div>
             <section className="pt-[46px] lg:flex items-center justify-between mx-6 md:mx-[70px] xl:mx-[150px]">

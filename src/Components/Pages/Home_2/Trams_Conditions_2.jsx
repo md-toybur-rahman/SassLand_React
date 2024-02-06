@@ -1,7 +1,10 @@
 import React from 'react';
 import Home_2_Banner_Title from '../../Sections/Home_2_Banner_Title';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Trams_Conditions_2 = () => {
+    useTitle('Trams Conditions');
+
     return (
         <div>
             <div className="mt-[50px] md:mt-[128px]">

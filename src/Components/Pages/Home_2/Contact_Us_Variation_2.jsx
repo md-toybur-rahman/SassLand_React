@@ -2,8 +2,11 @@ import React from 'react';
 import Home_2_Banner_Title from '../../Sections/Home_2_Banner_Title';
 import Contact_Details_Box from '../../Sections/Contact_Details_Box';
 import Message_Box from '../../Sections/Message_Box';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Contact_Us_Variation_2 = () => {
+    useTitle('Contact Us');
+
     return (
         <div>
             <div className="mt-[50px] md:mt-[86px]">

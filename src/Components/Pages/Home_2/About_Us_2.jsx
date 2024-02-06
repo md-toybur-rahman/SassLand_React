@@ -1,9 +1,12 @@
 // import React from 'react';
 
+import useTitle from "../../../Custom_Hooks/useTitle";
 import Home_2_Banner_Title from "../../Sections/Home_2_Banner_Title";
 import Home_2_Ready_Section from "../../Sections/Home_2_Ready_Section";
 
 const About_Us_2 = () => {
+    useTitle('About Us');
+
     return (
         <div>
             <div className="mt-[50px] md:mt-[128px]">

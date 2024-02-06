@@ -1,7 +1,10 @@
 import React from 'react';
 import Home_3_Features_Card from '../../Sections/Home_3_Features_Card';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const About_Us_3 = () => {
+    useTitle('About Us');
+
     return (
         <div className='mb-[80px] md:mb-[126px]'>
             <section className="">

@@ -1,6 +1,9 @@
 // import React from 'react';
 
+import useTitle from "../../../Custom_Hooks/useTitle";
+
 const Trams_Conditions_1 = () => {
+    useTitle('Trams Conditions');
     return (
         <div className="mb-[100px] md:mb-[216px]">
             <section className="pt-[50px] md:pt-[108px] lg:flex items-center justify-between mx-6 md:mx-[70px] xl:mx-[150px]">

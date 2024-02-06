@@ -1,8 +1,11 @@
 import React from 'react';
 import Home_4_Banner from '../../Sections/Home_4_Banner';
 import Home_4_Client_Think_Section from '../../Sections/Home_4_Client_Think_Section';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Gallery_4 = () => {
+    useTitle('Gallery');
+
     return (
         <div className='mb-[80px] md:mb-[148px]'>
             <section>
@@ -38,7 +41,8 @@ const Gallery_4 = () => {
                     </div>
                 </section>
                 <section className='px-5 lg:px-0 mt-[100px] md:mt-[203px]'>
-                    <Home_4_Client_Think_Section></Home_4_Client_Think_Section>
+                    <Home_4_Client_Think_Section
+                    videoId="xcJtL7QggTI"></Home_4_Client_Think_Section>
                 </section>
             </main>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Home_1_Blog_Card from '../../Sections/Home_1_Blog_Card';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const responsive = {
     desktop: {
@@ -20,26 +21,9 @@ const responsive = {
         slidesToSlide: 1 // optional, default to 1.
     }
 };
-const CustomDot = ({
-    index,
-    onClick,
-    active
-}) => {
-    return (
-        <button
-            onClick={e => {
-                onClick();
-                e.preventDefault();
-            }}
-            className={classNames("custom-dot", {
-                "custom-dot--active": active
-            })}
-        >
-            {React.Children.toArray(images)[index]}
-        </button>
-    );
-};
+
 const Gallery_1 = () => {
+    useTitle('Gallery');
     return (
         <div>
             <main className="max-w-[1156px]  mx-auto px-5 xl:px-0">

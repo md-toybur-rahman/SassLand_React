@@ -1,8 +1,11 @@
 import React from 'react';
 import Home_3_Related_Post_Card from '../../Sections/Home_3_Related_Post_Card';
 import { Link } from 'react-router-dom';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Blog_3 = () => {
+    useTitle('Blog');
+
     return (
         <div className='mb-[80px] md:mb-[126px]'>
             <section className="">
@@ -44,12 +47,12 @@ const Blog_3 = () => {
                                     consider which platforms to publish the content on.We partner closely with the most
                                     progressive companies in the world to improve their customer support operations. </p>
                                 <div className="flex items-center justify-center sm:justify-start gap-4 mt-[33px]">
-                                    <button
+                                    <Link to="/Home_3/Blog"><button 
                                         className="w-[135px] h-[40px] text-sm text-[#9D9E9F] border border-[#CED2DA] rounded-lg">Digital
-                                        Marketing</button>
-                                    <button
+                                        Marketing</button></Link>
+                                    <Link to="/Home_3/Blog"><button 
                                         className="w-[135px] h-[40px] text-sm text-[#9D9E9F] border border-[#CED2DA] rounded-lg">Digital
-                                        Marketing</button>
+                                        Marketing</button></Link>
                                 </div>
                             </div>
                         </Link>
@@ -68,13 +71,13 @@ const Blog_3 = () => {
                 </section>
 
                 <div className="font-[plex] font-semibold flex items-center justify-center gap-5 text-[#B1B1B1] mt-10">
-                    <span className="text-sm">Previous</span>
+                    <Link to=""><span className="text-sm">Previous</span></Link>
                     <div id="pagination-container" className="flex items-center gap-5">
                         <Link className="text-[#262729]">1</Link>
                         <Link className="">2</Link>
                         <Link className="">3</Link>
                     </div>
-                    <span className="text-sm text-[#262729]">Next</span>
+                    <Link to=""><span className="text-sm text-[#262729]">Next</span></Link>
                 </div>
             </main>
         </div>

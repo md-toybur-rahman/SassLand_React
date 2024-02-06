@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Home_3_Related_Post_Card from '../../Sections/Home_3_Related_Post_Card';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Blog_Details_3 = () => {
+    useTitle('Blog Details');
+
     return (
         <div className='mb-[80px] md:mb-[137px]'>
             <main className="max-w-[1142px] mx-auto  px-5 xl:px-0">

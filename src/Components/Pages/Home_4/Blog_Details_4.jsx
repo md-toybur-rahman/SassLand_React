@@ -3,8 +3,11 @@ import Home_4_Blog_Card from '../../Sections/Home_4_Blog_Card';
 import Home_4_Blog_Category from '../../Sections/Home_4_Blog_Category';
 import Home_4_Comment_Box from '../../Sections/Home_4_Comment_Box';
 import Message_Box from '../../Sections/Message_Box';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Blog_Details_4 = () => {
+    useTitle('Blog Details');
+
     return (
         <div className='bg-[#F8F8FA] mb-[100px] md:mb-[124px]'>
             <main className="max-w-[1141px] mx-auto">

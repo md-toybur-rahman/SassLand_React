@@ -93,7 +93,7 @@ const Navbar_4 = () => {
                             <div className="dropdown_parent">
                                 <div className="">
                                     <div className="flex items-center gap-1">
-                                        <h1 className="">Home </h1>
+                                        <h1 className="cursor-pointer">Home </h1>
                                         {
                                             location.pathname == "/Home_4" ?
                                                 <img className="py-1 cursor-pointer" src="../../../../public/images/icons/arrow_drop_down.svg" alt="" />
@@ -107,6 +107,7 @@ const Navbar_4 = () => {
                                     <li><Link to="/Home_2">Home 2</Link></li>
                                     <li><Link to="/Home_3">Home 3</Link></li>
                                     <li><Link to="/Home_4">Home 4</Link></li>
+                                    <li><Link to="/Home_5">Home 5</Link></li>
                                 </ul>
                             </div>
                         </li>
@@ -114,7 +115,7 @@ const Navbar_4 = () => {
                             <div className="dropdown_parent">
                                 <div className="">
                                     <div className="flex items-center gap-1">
-                                        <h1 className="">Pages </h1>
+                                        <h1 className="cursor-pointer">Pages </h1>
                                         {
                                             location.pathname == "/Home_4" ?
                                                 <img className="py-1 cursor-pointer" src="../../../../public/images/icons/arrow_drop_down.svg" alt="" />
@@ -139,7 +140,7 @@ const Navbar_4 = () => {
                             <div className="dropdown_parent">
                                 <div className="">
                                     <div className="flex items-center gap-1">
-                                        <h1 className="">Components </h1>
+                                        <h1 className="cursor-pointer">Components </h1>
                                         {
                                             location.pathname == "/Home_4" ?
                                                 <img className="py-1 cursor-pointer" src="../../../../public/images/icons/arrow_drop_down.svg" alt="" />
@@ -178,7 +179,7 @@ const Navbar_4 = () => {
                             <div className="dropdown_parent">
                                 <div className="">
                                     <div className="flex items-center gap-1">
-                                        <h1 className="">Home </h1>
+                                        <h1 className="cursor-pointer">Home </h1>
                                         {
                                             location.pathname == "/Home_4" ?
                                                 <img className="p-2 cursor-pointer" src="../../../../public/images/icons/arrow_drop_down.svg" alt="" />
@@ -192,6 +193,7 @@ const Navbar_4 = () => {
                                     <li><Link to="/Home_2">Home 2</Link></li>
                                     <li><Link to="/Home_3">Home 3</Link></li>
                                     <li><Link to="/Home_4">Home 4</Link></li>
+                                    <li><Link to="/Home_5">Home 5</Link></li>
                                 </ul>
                             </div>
                         </li>
@@ -199,7 +201,7 @@ const Navbar_4 = () => {
                             <div className="dropdown_parent">
                                 <div className="">
                                     <div className="flex items-center gap-1">
-                                        <h1 className="">Pages </h1>
+                                        <h1 className="cursor-pointer">Pages </h1>
                                         {
                                             location.pathname == "/Home_4" ?
                                                 <img className="p-2 cursor-pointer" src="../../../../public/images/icons/arrow_drop_down.svg" alt="" />
@@ -224,7 +226,7 @@ const Navbar_4 = () => {
                             <div className="dropdown_parent">
                                 <div className="">
                                     <div className="flex items-center gap-1">
-                                        <h1 className="">Components </h1>
+                                        <h1 className="cursor-pointer">Components </h1>
                                         {
                                             location.pathname == "/Home_4" ?
                                                 <img className="p-2 cursor-pointer" src="../../../../public/images/icons/arrow_drop_down.svg" alt="" />

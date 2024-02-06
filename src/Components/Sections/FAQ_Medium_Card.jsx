@@ -11,7 +11,10 @@ const FAQ_Medium_Card = (props) => {
         else if (location.pathname == "/Home_4/FAQ") {
             setPathSelection(true);
         }
-        else{
+        else if  (location.pathname == "/Home_5") {
+            setPathSelection(true);
+        }
+        else {
             setPathSelection(false);
         }
     }, [])
@@ -20,10 +23,10 @@ const FAQ_Medium_Card = (props) => {
         const icon = accordionCard.getElementsByClassName('accordion_icon')[0];
         const answer = accordionCard.getElementsByClassName('accordion_answer')[0];
         if (answer.classList.contains('hidden')) {
-            if(!pathSelection){
+            if (!pathSelection) {
                 icon.style.rotate = '45deg';
             }
-            else{
+            else {
                 icon.style.rotate = '180deg';
             }
             answer.classList.remove('hidden');
@@ -38,45 +41,53 @@ const FAQ_Medium_Card = (props) => {
         }
     }
     return (
-        <div id={`accordion_card_${props.index}`} onClick={accordionHandler} className={`mb-6 cursor-pointer ${location.pathname == "/Home_2/Pricing_Plans" ? 'bg-white px-6 py-8 rounded-md border border-[#E7E9ED]' : ''} ${location.pathname == "/Home_4/FAQ" ? 'accordion-card bg-white px-6 py-8 rounded-md' : ''}`}>
+        <div id={`accordion_card_${props.index}`} onClick={accordionHandler} className={`mb-6 cursor-pointer ${location.pathname == "/Home_2/Pricing_Plans" ? 'bg-white px-6 py-8 rounded-md border border-[#E7E9ED]' : ''} ${location.pathname == "/Home_4/FAQ" ? 'accordion-card bg-white px-6 py-8 rounded-md' : ''} ${location.pathname == "/Home_5" ? 'border border-[#E7E9ED] rounded-xl  py-5 mb-4' : ''}`}>
             <div
                 className={`flex items-center justify-between 
                 ${location.pathname == "/" ? 'bg-[#F5F5F7] rounded-full border border-[#FEF8F7] p-4 text-[#242221]' : ''} 
                 ${location.pathname == "/Home_4" ? 'bg-[#F8F5F4] rounded-full border border-[#FEF8F7] p-4 text-[#242221]' : ''} 
-                ${location.pathname == "/Home_3/Pricing_Plans" ? 'bg-[#F9F9FF] rounded-md text-[#2E2E52] border border-[#FEF8F7] p-4' : ''}`}>
+                ${location.pathname == "/Home_3/Pricing_Plans" ? 'bg-[#F9F9FF] rounded-md text-[#2E2E52] border border-[#FEF8F7] p-4' : ''} ${location.pathname == "/Home_5" ? 'px-6' : ''}`}>
                 <p className="text-base font-semibold">{props.question}</p>
                 {
                     location.pathname == "/Home_2/Pricing_Plans" ?
-                    <img className={`accordion_icon duration-300`}
-                    src="../../../public/images/icons/accordion-arrow.svg" alt="" /> : ''
+                        <img className={`accordion_icon duration-300`}
+                            src="../../../public/images/icons/accordion-arrow.svg" alt="" /> : ''
                 }
                 {
-                    location.pathname =="/Home_4/FAQ" ? 
-                    <img className={`accordion_icon duration-300`}
-                    src="../../../public/images/icons/accordion-arrow.svg" alt="" /> : ''
+                    location.pathname == "/Home_4/FAQ" ?
+                        <img className={`accordion_icon duration-300`}
+                            src="../../../public/images/icons/accordion-arrow.svg" alt="" /> : ''
                 }
                 {
-                    location.pathname =="/" ? 
-                    <img className={`accordion_icon duration-300`}
-                    src="../../../public/images/icons/accordion-icon-home3.svg" alt="" /> : ''
+                    location.pathname == "/" ?
+                        <img className={`accordion_icon duration-300`}
+                            src="../../../public/images/icons/accordion-icon-home3.svg" alt="" /> : ''
                 }
                 {
-                    location.pathname =="/Home_4" ? 
-                    <img className={`accordion_icon duration-300`}
-                    src="../../../public/images/icons/accordion-icon-home3.svg" alt="" /> : ''
+                    location.pathname == "/Home_4" ?
+                        <img className={`accordion_icon duration-300`}
+                            src="../../../public/images/icons/accordion-icon-home3.svg" alt="" /> : ''
                 }
                 {
-                    location.pathname =="/Home_3/Pricing_Plans" ? 
-                    <img className={`accordion_icon duration-300`}
-                    src="../../../public/images/icons/accordion-icon-home3.svg" alt="" /> : ''
+                    location.pathname == "/Home_3/Pricing_Plans" ?
+                        <img className={`accordion_icon duration-300`}
+                            src="../../../public/images/icons/accordion-icon-home3.svg" alt="" /> : ''
+                }
+                {
+                    location.pathname == "/Home_5" ?
+                        <div className='h-6 w-6 flex items-center justify-center rounded-full bg-[#E7E7E8] duration-300'>
+                            <img className={`accordion_icon duration-300`}
+                                src="../../../public/images/icons/accordion-arrow.svg" alt="" />
+                        </div> : ''
                 }
             </div>
             <div className={`accordion_answer max-w-[789px] leading-[24px]  
             ${location.pathname == "/Home_2/Pricing_Plans" ? 'pt-11 px-0' : ''} 
             ${location.pathname == "/Home_4/FAQ" ? 'pt-11 px-0' : ''}
-            ${location.pathname =="/" ? 'px-4 pt-6' : ''} 
-            ${location.pathname =="/Home_4" ? 'px-4 pt-6' : ''}
-            ${location.pathname =="/Home_3/Pricing_Plans" ? 'px-4 pt-6' : ''}h-0 hidden duration-300`}>
+            ${location.pathname == "/" ? 'px-4 pt-6' : ''} 
+            ${location.pathname == "/Home_4" ? 'px-4 pt-6' : ''}
+            ${location.pathname == "/Home_3/Pricing_Plans" ? 'px-4 pt-6' : ''} 
+            ${location.pathname == "/Home_5" ? 'mt-5 pt-5 border-t border-[#D9DCDF] overflow-hidden px-6' : ''} h-0 hidden duration-300`}>
                 <p className={`${location.pathname == "/Home_3/Pricing_Plans" ? 'text-[#8787A4]' : 'text-[#676769]'}`}>{
                     props.answer
                 }</p>

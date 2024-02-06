@@ -54,7 +54,7 @@ const Message_Box = () => {
                         <span className="text-base font-medium text-[#575757]">Message</span>
                     </label>
                     <div className="border border-[#CED2DA] rounded-lg px-3 py-4 bg-white">
-                        <textarea className="resize-none w-full h-[138px]" name="" id=""></textarea>
+                        <textarea className="resize-none w-full h-[138px] outline-none" name="" id=""></textarea>
                     </div>
                 </div>
 

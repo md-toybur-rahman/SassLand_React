@@ -32,7 +32,7 @@ const Navbar_3 = () => {
                             <li>
                                 <div className="dropdown_parent">
                                     <div className="">
-                                        <div className="flex items-center gap-1">
+                                        <div className="flex items-center gap-1 cursor-pointer">
                                             <h1 className="">Home </h1>
                                             {
                                                 location.pathname == "/Home_3" ?
@@ -47,13 +47,14 @@ const Navbar_3 = () => {
                                         <li><Link to="/Home_2">Home 2</Link></li>
                                         <li><Link to="/Home_3">Home 3</Link></li>
                                         <li><Link to="/Home_4">Home 4</Link></li>
+                                        <li><Link to="/Home_5">Home 5</Link></li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
                                 <div className="dropdown_parent">
                                     <div className="">
-                                        <div className="flex items-center gap-1">
+                                        <div className="flex items-center gap-1 cursor-pointer">
                                             <h1 className="">Pages </h1>
                                             {
                                                 location.pathname == "/Home_3" ?
@@ -78,7 +79,7 @@ const Navbar_3 = () => {
                             <li>
                                 <div className="dropdown_parent">
                                     <div className="">
-                                        <div className="flex items-center gap-1">
+                                        <div className="flex items-center gap-1 cursor-pointer">
                                             <h1 className="">Components </h1>
                                             {
                                                 location.pathname == "/Home_3" ?
@@ -117,7 +118,7 @@ const Navbar_3 = () => {
                             <li>
                                 <div className="dropdown_parent">
                                     <div className="">
-                                        <div className="flex items-center gap-1">
+                                        <div className="flex items-center gap-1 cursor-pointer">
                                             <h1 className="">Home </h1>
                                             {
                                                 location.pathname == "/Home_3" ?
@@ -132,13 +133,14 @@ const Navbar_3 = () => {
                                         <li><Link to="/Home_2">Home 2</Link></li>
                                         <li><Link to="/Home_3">Home 3</Link></li>
                                         <li><Link to="/Home_4">Home 4</Link></li>
+                                        <li><Link to="/Home_5">Home 5</Link></li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
                                 <div className="dropdown_parent">
                                     <div className="">
-                                        <div className="flex items-center gap-1">
+                                        <div className="flex items-center gap-1 cursor-pointer">
                                             <h1 className="">Pages </h1>
                                             {
                                                 location.pathname == "/Home_3" ?
@@ -163,7 +165,7 @@ const Navbar_3 = () => {
                             <li>
                                 <div className="dropdown_parent">
                                     <div className="">
-                                        <div className="flex items-center gap-1">
+                                        <div className="flex items-center gap-1 cursor-pointer">
                                             <h1 className="">Components </h1>
                                             {
                                                 location.pathname == "/Home_3" ?

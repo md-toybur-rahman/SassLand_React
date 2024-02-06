@@ -1,6 +1,9 @@
 import React from 'react';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Contact_Us_3 = () => {
+    useTitle('Contact Us');
+
     return (
         <main className="max-w-[1186px] mx-auto px-5 xl:px-0 mt-[72px] mb-[92px]">
             <section className="flex justify-center">

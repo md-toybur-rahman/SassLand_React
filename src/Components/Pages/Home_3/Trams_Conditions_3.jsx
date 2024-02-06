@@ -1,6 +1,9 @@
 import React from 'react';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Trams_Conditions_3 = () => {
+    useTitle('Trams Conditions');
+
     return (
         <main className="max-w-[1186px] mx-auto  px-5 xl:px-0 mt-[50px] md:mt-[117px] mb-[80px]">
             <section>

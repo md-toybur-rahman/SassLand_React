@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import "https://code.jquery.com/jquery-3.2.1.min.js"
+import "../../../public/css/grt-youtube-popup.css";
+import "../../../public/js/grt-youtube-popup";
+import useVideoModal from '../../Custom_Hooks/useVideoModal';
 
-const Home_4_Client_Think_Section = () => {
+const Home_4_Client_Think_Section = (props) => {
+    // useEffect(() => {
+    //     $(`.${props.youtubeClass}`).grtyoutube({ autoPlay:false });
+    // } ,[])
     return (
         <div>
             <div className="flex flex-col items-center justify-center mb-[98px]">
@@ -30,7 +37,7 @@ const Home_4_Client_Think_Section = () => {
                                     </div>
                                     <p className="text-base md:text-[20px] text-[#E2E2E2]">Hunter A., Head of Growth</p>
                                 </div>
-                                <img className="w-10 md:w-auto" src="../../../public/images/icons/play.svg" alt="" />
+                                <img onClick={() => useVideoModal(props.videoId)} className={`w-10 md:w-auto cursor-pointer`} src="../../../public/images/icons/play.svg" alt="" />
                             </div>
                         </div>
                     </div>

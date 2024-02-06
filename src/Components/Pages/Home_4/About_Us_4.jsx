@@ -4,8 +4,12 @@ import Home_4_Client_Think_Section from '../../Sections/Home_4_Client_Think_Sect
 import Trusted_Companies from '../../Sections/Trusted_Companies';
 import Our_Team from '../../Sections/Our_Team';
 import Home_4_Ready_1_Section from '../../Sections/Home_4_Ready_1_Section';
+import useTitle from '../../../Custom_Hooks/useTitle';
+
 
 const About_Us_4 = () => {
+    useTitle('About Us');
+
     return (
         <div className='mb-[54px]'>
             <section>
@@ -45,7 +49,8 @@ const About_Us_4 = () => {
             </section>
             <main className="max-w-[1141px] mx-auto">
                 <section className="px-5 lg:px-0 mt-[100px] md:mt-[156px]">
-                    <Home_4_Client_Think_Section></Home_4_Client_Think_Section>
+                <Home_4_Client_Think_Section
+                videoId="xcJtL7QggTI"></Home_4_Client_Think_Section>
                 </section>
                 <section>
                     <Trusted_Companies></Trusted_Companies>

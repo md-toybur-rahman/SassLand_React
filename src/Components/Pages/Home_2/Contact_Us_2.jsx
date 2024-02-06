@@ -1,6 +1,8 @@
 import React from 'react';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Contact_Us_2 = () => {
+    useTitle('Contact Us');
     return (
         <main className="max-w-[1140px] mx-auto px-5 xl:px-0">
             <section className="mt-[50px] md:mt-[108px]">

@@ -1,10 +1,12 @@
 // import React from 'react';
 
+import { Link } from "react-router-dom";
+import useTitle from "../../../Custom_Hooks/useTitle";
 import Home_1_Banner_Title from "../../Sections/Home_1_Banner_Title";
 import Home_1_Blog_Card from "../../Sections/Home_1_Blog_Card";
-import Footer_1 from "./Footer_1";
 
 const Blog_1 = () => {
+    useTitle('Blog');
     return (
         <div>
             <div>
@@ -53,13 +55,13 @@ const Blog_1 = () => {
                     </div>
                     <div
                         className="font-[plex] font-semibold flex items-center justify-center gap-5 text-[#B1B1B1] mt-[50px] md:mt-[120px] mb-[80px] md:mb-[163px]">
-                        <span className="text-sm">Previous</span>
+                        <Link to=""><span className="text-sm">Previous</span></Link>
                         <div id="pagination-container" className="flex items-center gap-5">
-                            <a className="text-[#262729]" href="#">1</a>
-                            <a className="" href="#">2</a>
-                            <a className="" href="#">3</a>
+                            <Link className="text-[#262729]" href="#">1</Link>
+                            <Link className="" href="#">2</Link>
+                            <Link className="" href="#">3</Link>
                         </div>
-                        <span className="text-sm text-[#262729]">Next</span>
+                        <Link to=""><span className="text-sm text-[#262729]">Next</span></Link>
                     </div>
                 </section>
                 {/* End Blog Card */}

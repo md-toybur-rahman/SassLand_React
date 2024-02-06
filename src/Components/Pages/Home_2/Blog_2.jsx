@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import Home_2_Banner_Title from "../../Sections/Home_2_Banner_Title";
 import Home_2_Blog_Card from "../../Sections/Home_2_Blog_Card";
 import Home_2_Blog_Category_Box from "../../Sections/Home_2_Blog_Category_Box";
+import useTitle from "../../../Custom_Hooks/useTitle";
 
 const Blog_2 = () => {
+    useTitle('Blog');
+
     return (
         <div>
             <div className="mt-[50px] md:mt-[128px]">
@@ -44,13 +47,13 @@ const Blog_2 = () => {
             </main>
 
             <div className="font-[plex] font-semibold flex items-center justify-center gap-5 text-[#B1B1B1] mt-[43px]">
-                <span className="text-sm">Previous</span>
+                <Link to=""><span className="text-sm">Previous</span></Link>
                 <div id="pagination-container" className="flex items-center gap-5">
                     <Link className="hover:text-[#F9C242]" to="">1</Link>
                     <Link className="hover:text-[#F9C242]" to="">2</Link>
                     <Link className="hover:text-[#F9C242]" to="">3</Link>
                 </div>
-                <span className="text-sm text-[#262729]">Next</span>
+                <Link to=""><span className="text-sm text-[#262729]">Next</span></Link>
             </div>
         </div>
     );

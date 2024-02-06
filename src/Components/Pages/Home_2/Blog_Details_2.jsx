@@ -1,8 +1,10 @@
 import React from 'react';
 import Home_2_Blog_Category_Box from '../../Sections/Home_2_Blog_Category_Box';
 import Home_2_Blog_Card from '../../Sections/Home_2_Blog_Card';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Blog_Details_2 = () => {
+    useTitle('Blog Details');
     return (
         <main className="max-w-[1142px]  mx-auto px-0 mt-0 md:mt-[50px]">
             <section className="flex flex-wrap md:flex-nowrap justify-center items-start gap-10 md:gap-[25px] xl:gap-[32px]">

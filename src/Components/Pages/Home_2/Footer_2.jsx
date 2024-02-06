@@ -28,6 +28,7 @@ const Footer_2 = () => {
                                         <li><Link to="/Home_2">Home 2</Link></li>
                                         <li><Link to="/Home_3">Home 3</Link></li>
                                         <li><Link to="/Home_4">Home 4</Link></li>
+                                        <li><Link to="/Home_5">Home 5</Link></li>
                                     </div>
                                 </ul>
                             </div>

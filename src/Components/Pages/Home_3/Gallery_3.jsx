@@ -2,8 +2,11 @@ import React from 'react';
 import Home_3_Gallery_Section from '../../Sections/Home_3_Gallery_Section';
 import Home_3_Customer_Feedback_Card from '../../Sections/Home_3_Customer_Feedback_Card';
 import Trusted_Companies from '../../Sections/Trusted_Companies';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Gallery_3 = () => {
+    useTitle('Gallery');
+
     return (
         <div className='mb-[80px] md:mb-[139px]'>
             <section className="mt-[50px] md:mt-[86px] px-5 md:px-0">

@@ -32,8 +32,8 @@ const Footer_3 = () => {
                                 <div>
                                     <h1 className="font-semibold text-sm text-[#25373F] mb-4">Company</h1>
                                     <ul className="flex flex-col gap-[6px] text-xs md:text-sm text-[#676769]">
-                                        <li><Link href="Home_3/About_us.html">About us</Link></li>
-                                        <li><Link href="Home_3/Contact_Us.html">Contact us</Link></li>
+                                        <li><Link to="/Home_3/About_us.html">About us</Link></li>
+                                        <li><Link to="/Home_3/Contact_Us.html">Contact us</Link></li>
                                         <li><Link to="">Careers</Link></li>
                                         <li><Link to="">Press</Link></li>
                                     </ul>
@@ -106,8 +106,8 @@ const Footer_3 = () => {
                                 <div>
                                     <h1 className="font-semibold text-sm text-white mb-4">Company</h1>
                                     <ul className="flex flex-col gap-[6px] text-xs md:text-sm text-[#F1F1FF]">
-                                        <li><Link href="About_Us.html">About us</Link></li>
-                                        <li><Link href="Contact_Us.html">Contact us</Link></li>
+                                        <li><Link to="/Home_3/About_Us.html">About us</Link></li>
+                                        <li><Link to="/Home_3/Contact_Us.html">Contact us</Link></li>
                                         <li><Link to="">Careers</Link></li>
                                         <li><Link to="">Press</Link></li>
                                     </ul>

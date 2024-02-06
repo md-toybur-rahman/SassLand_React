@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Sign_Up_2 = () => {
+    useTitle('Sign Up');
+    
     return (
         <main className="mx-auto">
         <section className="mt-[50px] md:mt-[86px]">

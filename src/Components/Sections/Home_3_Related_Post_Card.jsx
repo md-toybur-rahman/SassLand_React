@@ -14,12 +14,12 @@ const Home_3_Related_Post_Card = () => {
                 <p className="text-[#606086] text-sm font-medium mt-4">At this point, you need to consider which
                     platforms to publish the content on.</p>
                 <div className="flex items-center justify-center sm:justify-start gap-4 mt-6">
-                    <button
+                    <Link to="/Home_3/Blog"><button
                         className="w-[135px] h-[40px] text-sm text-[#9D9E9F] border border-[#CED2DA] rounded-lg">Digital
-                        Marketing</button>
-                    <button
+                        Marketing</button></Link>
+                    <Link to="/Home_3/Blog"><button
                         className="w-[135px] h-[40px] text-sm text-[#9D9E9F] border border-[#CED2DA] rounded-lg">Digital
-                        Marketing</button>
+                        Marketing</button></Link>
                 </div>
             </div>
         </Link>

@@ -16,7 +16,7 @@ import Trusted_Companies from "../../Sections/Trusted_Companies";
 import People_Rating_Card from '../../Sections/People_Rating_Card';
 
 const Home_2 = () => {
-    useTitle('Home_2')
+    useTitle('Home')
     return (
         <div>
             <div>

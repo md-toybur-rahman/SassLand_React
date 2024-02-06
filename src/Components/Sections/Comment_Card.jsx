@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Comment_Card = (props) => {
     return (
@@ -11,10 +12,10 @@ const Comment_Card = (props) => {
                     <p className="text-xs md:text-sm font-bold">15 Jan, 2020</p>
                     <p className="text-sm md:text-base text-[#646464] mt-4">Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit</p>
-                    <div className="flex items-center gap-1 mt-4">
+                    <Link to="" className="flex items-center gap-1 mt-4">
                         <img src="../../../../public/images/icons/quickreply.svg" alt="" />
                         <p className="text-[#6A26DA] text-base font-semibold">Replay</p>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>

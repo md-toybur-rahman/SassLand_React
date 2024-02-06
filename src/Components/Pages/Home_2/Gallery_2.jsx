@@ -1,9 +1,37 @@
 // import React from 'react';
 
+import useTitle from "../../../Custom_Hooks/useTitle";
 import Home_2_Banner_Title from "../../Sections/Home_2_Banner_Title";
 import Home_2_Ready_Section from "../../Sections/Home_2_Ready_Section";
+import "../../../../public/css/masonry_package.css";
+import Masonry from "masonry-layout";
+import { useEffect, useRef } from "react";
+// import "../../../../public/js/masonry_package.min.js";
 
 const Gallery_2 = () => {
+    useTitle('Gallery');
+
+    useEffect(() => {
+        const grid = document.querySelector('.gallery');
+        new Masonry(grid, {
+            itemSelector: '.grid-itemm',
+            columnWidth: 185,
+            gutter: 5
+        });
+
+    }, []);
+    const openModal = (imageSrc) => {
+            const modal = document.createElement('div');
+            modal.className = 'modall';
+            modal.innerHTML = `<div class="modal-contentt"><img src="${imageSrc}" alt="Modal Image"></div>`;
+            document.body.appendChild(modal);
+
+            modal.addEventListener('click', function () {
+                document.body.removeChild(modal);
+            });
+            
+        };
+
     return (
         <div>
             <div className="mt-[50px] md:mt-[86px]">
@@ -19,24 +47,37 @@ const Gallery_2 = () => {
                     leading="32"></Home_2_Banner_Title>
             </div>
             <main className="max-w-[1142px]  mx-auto px-5 xl:px-0">
-                <div className="flex gap-2 sm:gap-5 md:gap-8 items-end mt-[50px] md:mt-[102px]">
-                    <div className="flex flex-col items-end gap-3 sm:gap-5 md:gap-8">
-                        <img data-aos="fade-down-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                            data-aos-delay="0" src="../../../../public/images/gallery1-home2.png" alt="" />
-                        <img data-aos="fade-up-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                            data-aos-delay="0" className="w-[100px] md:w-[180px] lg:w-[272px]"
-                            src="../../../../public/images/gallery4-home2.png" alt="" />
+                <div className="gallery mt-[100px]">
+                    <div className="grid-sizer"></div>
+                    <div onClick={()=> openModal('../../../../public/images/gallery3-home2.png')} className="grid-itemm">
+                        <img src="../../../../public/images/gallery3-home2.png" alt="Image 1" />
                     </div>
-                    <div>
-                        <img data-aos="fade-in" data-aos-duration="2000" className="min-h-[175px]"
-                            src="../../../../public/images/gallery2-home2.png" alt="" />
+                    <div onClick={()=> openModal('../../../../public/images/gallery2-home2.png')} className="grid-itemm">
+                        <img src="../../../../public/images/gallery2-home2.png" alt="Image 2" />
                     </div>
-                    <div className="flex flex-col items-start gap-2 sm:gap-[10px] md:gap-[17px]">
-                        <img data-aos="fade-down-left" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                            data-aos-delay="0" className="w-[100px] md:w-[180px] lg:w-[272px]"
-                            src="../../../../public/images/gallery3-home2.png" alt="" />
-                        <img data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                            data-aos-delay="0" src="../../../../public/images/gallery5-home2.png" alt="" />
+                    <div onClick={()=> openModal('../../../../public/images/gallery1-home2.png')} className="grid-itemm">
+                        <img src="../../../../public/images/gallery1-home2.png" alt="Image 3" />
+                    </div>
+                    <div onClick={()=> openModal('../../../../public/images/gallery5-home2.png')} className="grid-itemm">
+                        <img src="../../../../public/images/gallery5-home2.png" alt="Image 4" />
+                    </div>
+                    <div onClick={()=> openModal('../../../../public/images/gallery4-home2.png')} className="grid-itemm">
+                        <img src="../../../../public/images/gallery4-home2.png" alt="Image 5" />
+                    </div>
+                    <div onClick={()=> openModal('../../../../public/images/gallery3-home2.png')} className="grid-itemm">
+                        <img src="../../../../public/images/gallery3-home2.png" alt="Image 6" />
+                    </div>
+                    <div onClick={()=> openModal('../../../../public/images/gallery2-home2.png')} className="grid-itemm">
+                        <img src="../../../../public/images/gallery2-home2.png" alt="Image 7" />
+                    </div>
+                    <div onClick={()=> openModal('../../../../public/images/gallery1-home2.png')} className="grid-itemm">
+                        <img src="../../../../public/images/gallery1-home2.png" alt="Image 8" />
+                    </div>
+                    <div onClick={()=> openModal('../../../../public/images/gallery5-home2.png')} className="grid-itemm">
+                        <img src="../../../../public/images/gallery5-home2.png" alt="Image 9" />
+                    </div>
+                    <div onClick={()=> openModal('../../../../public/images/gallery4-home2.png')} className="grid-itemm">
+                        <img src="../../../../public/images/gallery4-home2.png" alt="Image 10" />
                     </div>
                 </div>
                 <div className="mt-[80px] md:mt-[120px]">

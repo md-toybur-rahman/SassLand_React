@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Our_Team_Card = (props) => {
     return (
@@ -12,10 +13,10 @@ const Our_Team_Card = (props) => {
                 <p className="text-[#676769] text-xs md:text-sm mt-[23px]">Amet minim mollit non deserunt ullamco est
                     sit aliqua dolor do amet sint velit of a officia</p>
             <div className="flex items-center justify-center md:justify-start gap-2 mt-4">
-                <img src={`../../../public/images/icons/${props.facebook_image}`} alt="" />
-                <img src={`../../../public/images/icons/${props.twitter_image}`} alt="" />
-                <img src={`../../../public/images/icons/${props.linkedin_image}`} alt="" />
-                <img src={`../../../public/images/icons/${props.instagram_image}`} alt="" />
+                <Link to=""><img src={`../../../public/images/icons/${props.facebook_image}`} alt="" /></Link>
+                <Link to=""><img src={`../../../public/images/icons/${props.twitter_image}`} alt="" /></Link>
+                <Link to=""><img src={`../../../public/images/icons/${props.linkedin_image}`} alt="" /></Link>
+                <Link to=""><img src={`../../../public/images/icons/${props.instagram_image}`} alt="" /></Link>
             </div>
             </div>
         </div>

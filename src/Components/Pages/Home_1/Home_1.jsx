@@ -23,7 +23,7 @@ import Time_Is_Money from "../../Sections/Time_Is_Money";
 import Trusted_Companies from "../../Sections/Trusted_Companies";
 
 const Home_1 = () => {
-    useTitle('Home_1')
+    useTitle('Home')
 
     return (
         <div>

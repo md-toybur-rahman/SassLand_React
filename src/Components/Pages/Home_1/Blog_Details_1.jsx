@@ -1,11 +1,13 @@
 // import React from 'react';
 
+import useTitle from "../../../Custom_Hooks/useTitle";
 import Comment_Card from "../../Sections/Comment_Card";
 import Home_1_Banner_Title from "../../Sections/Home_1_Banner_Title";
 import Message_Box from "../../Sections/Message_Box";
 import Footer_1 from "./Footer_1";
 
 const Blog_Details_1 = () => {
+    useTitle('Blog Details');
     return (
         <div>
             <div>

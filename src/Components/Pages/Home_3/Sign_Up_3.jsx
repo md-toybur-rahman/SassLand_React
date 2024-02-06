@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Sign_Up_3 = () => {
+    useTitle('Sign Up');
+
     return (
         <main className="max-w-[1186px] mx-auto  px-5 xl:px-0 mt-[50px] md:mt-[139px] mb-[80px] md:mb-[190px]">
             <section className="flex gap-[50px] lg:gap-[117px] justify-between items-center">

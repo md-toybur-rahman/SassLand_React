@@ -1,8 +1,11 @@
 import React from 'react';
 import Home_4_Banner from '../../Sections/Home_4_Banner';
 import Home_4_Ready_1_Section from '../../Sections/Home_4_Ready_1_Section';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Pricing_Plans_4 = () => {
+    useTitle('Pricing Plan');
+
     return (
         <div className='mb-[60px]'>
             <section>

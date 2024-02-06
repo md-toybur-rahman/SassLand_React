@@ -1,8 +1,11 @@
 import React from 'react';
 import Home_4_Banner from '../../Sections/Home_4_Banner';
 import Message_Box from '../../Sections/Message_Box';
+import useTitle from '../../../Custom_Hooks/useTitle';
 
 const Contact_Us_4 = () => {
+    useTitle('Contact Us');
+
     return (
         <div className='mb-[80px] md:mb-[110px]'>
             <section>
